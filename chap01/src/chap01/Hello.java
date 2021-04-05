@@ -1,4 +1,4 @@
-package chap01;
+package chap01.src.chap01;
 
 public class Hello {
 
