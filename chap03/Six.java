@@ -1,0 +1,31 @@
+package chap03;
+
+
+import java.util.Scanner;
+import java.lang.String;
+
+public class Six {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        String ch, y;
+
+        System.out.print("철수 : ");
+        ch = in.next();
+        System.out.print("영희 : ");
+        y = in.next();
+
+
+        if ((ch.equals("s") && y.equals("s")) || (ch.equals("r") && y.equals("r")) ||
+                (ch.equals("p") && y.equals("p"))) {
+            System.out.println("비겼습니다");
+        }
+        else if ((ch.equals("s") && y.equals("p")) || (ch.equals("r") && y.equals("s")) ||
+                (ch.equals("p") && y.equals("r"))) {
+            System.out.println("철수, 승!");
+        }
+        else  {
+            System.out.println("영희, 승!");
+        }
+
+    }
+}
