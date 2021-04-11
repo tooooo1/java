@@ -13,6 +13,7 @@ public class Eight {
 
     public static void Program(int m, int n, double p) {
         String[][] b= new String[m][n];
+        int c[][] = new int[m][n];
 
         for(int i=0;i<m;i++) {
             for (int j=0;j<n;j++) {
@@ -31,7 +32,7 @@ public class Eight {
     }
     public static void Program_Neighbor(int m, int n, double p) {
         String[][] b= new String[m][n];
-        int count = 0;
+        int c[][] = new int[m][n];
 
         for(int i=0;i<m;i++) {
             for (int j=0;j<n;j++) {
@@ -46,17 +47,16 @@ public class Eight {
 
         for(int i =0; i<m;i++) {
             for (int j=0; j<n;j++) {
-                if(b[i][j].equals("-")) {
-                    if ((i>0 && j >0) || ((i<m)&&(j<n)) ) {
+                if ((i>=1 && j >=1) || ((i<=m-1)&&(j<=n-1)) ) {
+                    if(b[i][j].equals("-")) {
                         for(int x=-1;x<2;x++) {
-                            for(int y=-2;y<2;y++) {
+                            for(int y=-1;y<2;y++) {
                                 if(b[i + x][j + y].equals("*")) {
-                                    count++;
+                                    c[i][j]++;
                                 }
                             }
                         }
-                        b[i][j] = String.valueOf(count);
-                        count =0;
+                        System.out.println(c[i][j]);
 
                     }
 
