@@ -43,9 +43,6 @@ class Member {
     }
 }
 
-
-
-
 public class Three {
     public static void main(String[] args) {
         Member m1 = new Member("갑", "1234", "asdf",40);
