@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ten {
     public static void main(String[] args) {
-        System.out.println("양의 정수를 입력하세요 : ");
+        System.out.print("양의 정수를 입력하세요 : ");
         int num = new Scanner(System.in).nextInt();
         if (isPrime(num))
             System.out.println(num + "는 소수입니다.");

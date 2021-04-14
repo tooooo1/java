@@ -12,6 +12,7 @@ public class Seven {
 
     }
 
+    //이름을 받는 메서드
     public static String input(String n) {
         String pick;
         Scanner in = new Scanner(System.in);
@@ -21,6 +22,7 @@ public class Seven {
         return pick;
     }
 
+    //가위바위보 메서드
     public static void whosWin(String first, String second) {
         if ((first.equals("s") && second.equals("s")) || (first.equals("r") && second.equals("r")) ||
                 (first.equals("p") && second.equals("p"))) {
