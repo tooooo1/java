@@ -10,7 +10,7 @@ public class Four {
         String b = "com";
         String c = "java";
         do {
-            System.out.println("URL을 입력하세요 : ");
+            System.out.print("URL을 입력하세요 : ");
             Scanner in = new Scanner(System.in);
             s = in.next();
 
