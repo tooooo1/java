@@ -3,9 +3,7 @@ package chap05;
 import java.util.Scanner;
 
 public class Five {
-    //Problem 5
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
         int[] num = new int[10];
         int[] hist = {0,0,0,0,0,0,0,0,0,0};
 
@@ -46,7 +44,8 @@ public class Five {
                 hist[9] ++;
             }
         }
-        //출력
+
+
         for(int i=0; i< hist.length; i++) {
             System.out.print((i*10)+"~"+(i*10+9)+":");
             for(int j=0; j<hist[i]; j++) {
