@@ -8,22 +8,22 @@ public class Seven {
         int[] d = {2,7,1,8,2};
 
         if(equals(a,b)) {
-            System.out.println("같다.");
+            System.out.println("a와 b는 같다.");
         }
         if(equals(b,c)) {
-            System.out.println("같다.");
+            System.out.println("b와 c는 같다.");
         }
         if(equals(c,d)) {
-            System.out.println("같다.");
+            System.out.println("c와 d는 같다.");
         }
         if(equals(d,a)) {
-            System.out.println("같다.");
+            System.out.println("a와 d는 같다.");
         }
         if(equals(a,c)) {
-            System.out.println("같다.");
+            System.out.println("a와 c는 같다.");
         }
         if(equals(d,b)) {
-            System.out.println("같다.");
+            System.out.println("b와 d는 같다.");
         }
     }
 
@@ -37,8 +37,5 @@ public class Seven {
             }
         }
         return true;
-
     }
-
-
 }
