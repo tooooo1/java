@@ -22,7 +22,6 @@ public class Three extends JFrame {
         JPanel p3 = new JPanel();
         JButton b = new JButton("변환");
         p3.add(b);
-        JPanel panel = new JPanel();
         add(p1, BorderLayout.NORTH);
         add(p2, BorderLayout.CENTER);
         add(p3, BorderLayout.SOUTH);
